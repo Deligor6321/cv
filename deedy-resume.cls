@@ -17,7 +17,7 @@
 %----------------------------------------------------------------------------------------
 
 \usepackage[
-	letterpaper, % Paper size
+	a4paper, % Paper size
 	top=0.75cm, % Top margin
 	bottom=0.75cm, % Bottom margin
 	left=1.25cm, % Left margin
@@ -25,7 +25,7 @@
 	footskip=1cm, % Space from the bottom margin to the baseline of the footer
 	headsep=0.5cm, % Space from the top margin to the baseline of the header
 	headheight=1cm, % Height of the header
-	%showframe % Uncomment to show frames around the margins for debugging purposes
+	% showframe % Uncomment to show frames around the margins for debugging purposes
 ]{geometry}
 
 %----------------------------------------------------------------------------------------
@@ -62,9 +62,9 @@
 \setlength{\TPHorizModule}{0.01\paperwidth} % Sets the units for the horizontal position used in the \begin{textblock} argument
 \setlength{\TPVertModule}{0.01\paperwidth} % Sets the units for the vertical position used in the \begin{textblock} argument
 \newcommand{\lastupdated}{ % Create a new command for printing the Last Updated text
-\begin{textblock}{25}(75,2) % The position of the Last Updated text on the page (75% of the page across, 2% down)
+\begin{textblock}{28}(70,2) % The position of the Last Updated text on the page
 \color{date}\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{8pt}{10pt}\selectfont % Text styling of the text
-Last Updated on \today % Last Updated text
+\hfill Last Updated on \today % Last Updated text
 \end{textblock}}
 
 %----------------------------------------------------------------------------------------
@@ -107,11 +107,18 @@ Last Updated on \today % Last Updated text
 \color{headings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{10pt}{12pt}\selectfont {#1\\} \normalfont}
 
 %----------------------------------------------------------------------------------------
-%	SECTION TITLE STYLING AND SPACING
+%	LISTS STYLING AND SPACING
 %----------------------------------------------------------------------------------------
 
-\newenvironment{tightitemize} % Defines the tightitemize environment which modifies the itemize environment to be more compact
-{\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt]}
+
+\newenvironment{descritemize} % Defines the descritemize environment for the Experience Description section
+{\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt,rightmargin=0pt,leftmargin=24pt]}
 {\end{itemize}}
 
-\newcommand{\tightitem}{\item[\ding{226}]} % Styled bullet for unordered list
+\newcommand{\descritem}{\item[\ding{226}]} % Arrow-style bullets for the Experience Description section
+
+\newenvironment{skillitemize} % Defines the skillitemize environment for the Skills section
+{\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt,rightmargin=0pt,leftmargin=16pt]}
+{\end{itemize}}
+
+\newcommand{\skillitem}{\item} % Bullets for the Skills section
