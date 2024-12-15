@@ -89,7 +89,7 @@
 \titlespacing{\subsection}{0pt}{0pt}{0pt} % Removes the spacing around the subsections
 \newcommand{\sectionspace}{\vspace{8pt}} % Add a set amount of space after sections and subsections
 \newcommand{\blockspace}{\vspace{12pt}} % Add a set amount of space after big blocks
-\newcommand{\columnspace}{\hspace{16pt}} % Add a set amount of space between vertical columns
+\newcommand{\columnspace}{\hspace{14pt}} % Add a set amount of space between vertical columns
 
 \titleformat{\section}{ % Customize the large section titles
 \color{headings}\scshape\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{16pt}{24pt}\selectfont \raggedright\uppercase}{}{0em}{}

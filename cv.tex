@@ -1,9 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Deedy CV/Resume
-% XeLaTeX Template
-% Version 1.0 (5/5/2014)
 %
-% This template has been downloaded from:
+% Deedy CV/Resume
+% The original template has been downloaded from:
 % http://www.LaTeXTemplates.com
 %
 % Original author:
@@ -26,10 +24,10 @@
 %
 \lastupdated % Print the Last Updated text at the top right
  
-\begin{minipage}[t]{0.65\textwidth}
+\begin{minipage}[t]{0.68\textwidth}
 
 \blockspace
-\namesection{Anton}{Ugarov}{Highly qualified software engineer with 6+ years of experience in C++ development. Proactive and responsible team player focused on self-performance.}
+\namesection{Anton}{Ugarov}{Highly qualified Software Engineer with 6+ years of expertise in C++ development. Specializing in high-performance backend systems and real-time data processing. }
 
 \end{minipage}
 \hfill
@@ -39,7 +37,7 @@
 %	CONTACTS & LINKS
 %----------------------------------------------------------------------------------------
 %
-\begin{minipage}[t]{0.30\textwidth}
+\begin{minipage}[t]{0.27\textwidth}
 
 \blockspace
 \colorbox{shade}{
@@ -79,11 +77,14 @@
 \textbf{Intermediate:}
 \begin{skillitemize}
     \skillitem Boost
-    \skillitem Network Protocols
     \skillitem Python
-    \skillitem PostgreSQL
+    \skillitem TCP/IP
+    \skillitem HTTP
     \skillitem Protobuf
+    \skillitem PostgreSQL
+    \skillitem CMake
     \skillitem Bash
+    \skillitem Git
     \skillitem Linux
     \skillitem Docker/Compose
 \end{skillitemize}
@@ -91,19 +92,28 @@
 \textbf{Basic:}
 \begin{skillitemize}
     \skillitem Go
-    \skillitem Qt5
     \skillitem OpenCV
     \skillitem MetalKit
 \end{skillitemize}
 
 \sectionspace 
 
+\textbf{Soft Skills:}
+\begin{skillitemize}
+    \skillitem Responsibility
+    \skillitem Effective communication
+    \skillitem Problem-solving
+    \skillitem Team collaboration
+\end{skillitemize}
+
+\sectionspace
+
 %------------------------------------------------
 % Languages
 %------------------------------------------------
 
 \section{Languages}
-\textbf{English} / B2 \\
+\textbf{English} / C1 \\
 \textbf{Russian} / native \\
 \textbf{Deutsch} / A1 (learning)
 
@@ -144,33 +154,33 @@ Specialization: Computer Aided Design Systems \\
 \section{Experience}
 
 \runsubsection{Self Employed}
-\descript{| Software Engineer}
+\descript{| Senior Software Engineer}
 \location{Apr 2024 - PRESENT | Zürich, Switzerland}
 
 Collaborating with a dynamic startup in a fast-paced environment.
-Developing a \textbf{high-load backend} for real-time telemetry and event aggregation, efficiently processing and manipulating \textbf{large-scale data streams}.
+Developing a \textbf{high-load C++20 backend} for real-time telemetry and event aggregation, efficiently processing and manipulating \textbf{large-scale data streams} at 200Mbps per core.
 \begin{descritemize}
-    \descritem Leveraged modern C++ \textbf{coroutines} with the \textbf{Seastar} framework for efficient concurrency, and utilized the \textbf{Ragel} state machine compiler for fast data parsing.
-    \descritem Led \textbf{availability} and \textbf{reliability} enhancements, and parsing of standard event formats (SyslogBSD, CEF, etc).
-    \descritem Built a sandbox service for debugging \textbf{data aggregation} with step-by-step insights.
+    \descritem Leveraged C++ \textbf{coroutines} with the Seastar framework for efficient concurrency.
+    \descritem Utilized the Ragel state machine compiler \textbf{reducing the parsing time} of standard event formats (SyslogBSD, CEF) by 70\%.
+    \descritem Led availability enhancements, \textbf{eliminating downtime} during service upgrades
+    \descritem \textbf{Built a sandbox service} for debugging data aggregation with step-by-step insights.
     \descritem \textbf{Reverse-engineered} and implemented a proprietary 3rd-party binary protocol.
-    \descritem Developed \textbf{GraphQL APIs} in Go to support frontend integration.
 \end{descritemize}
-\textbf{Stack}: \textit{C++23 / Seastar / Boost / Ragel / Docker / AWS / Python / Jinja / Go}
+\textbf{Stack}: \textit{C++20 / Seastar / Boost / Ragel / Docker / AWS / Python / Jinja / Go}
 
 \sectionspace
 
 %------------------------------------------------
 
 \runsubsection{WANNA}
-\descript{| Software Engineer}
+\descript{| Senior Software Engineer}
 \location{Jun 2022 - Apr 2024 | Limassol, Cyprus}
 
-Developed a \textbf{lightweight} cross-platform  \textbf{C++20} library enabling virtual try-on experiences.
+Developed a \textbf{lightweight cross-platform C++20 library} enabling virtual try-on experiences on \textbf{mobile devices}.
 \begin{descritemize}
-    \descritem Designed a \textbf{universal C API} for seamless interaction with native platform frontends, supported by \textbf{Objective-C} glue code. 
-    \descritem Built a generic \textbf{3D viewer}, featuring smooth animations and \textbf{high performance}. 
-    \descritem Upgraded the codebase to a \textbf{new render engine}.
+    \descritem \textbf{Designed a universal C API} for seamless interaction with native platform frontends, encapsulated by Objective-C glue code. 
+    \descritem Built a \textbf{generic 3D viewer} with smooth animations and high performance at 60FPS, establishing it as a core offering for the company.
+    \descritem Upgraded the codebase to a \textbf{new render engine} unlocking realistic reflections.
 \end{descritemize}
 \textbf{Stack}: \textit{C++20 / Objective-C / OpenCV / Metal / CoreML / CMake / Conan / GoogleTest}
 
@@ -182,15 +192,15 @@ Developed a \textbf{lightweight} cross-platform  \textbf{C++20} library enabling
 \descript{| Software Engineer}
 \location{Mar 2020 - May 2022 | St. Petersburg, Russia}
 
-Worked on a high-load \textbf{C++17} backend for Yandex.Messenger app, focusing on writing an \textbf{efficient} and \textbf{secure} asynchronous code to ensure \textbf{system resilience}.
+Developed a \textbf{high-load C++17 backend} for Yandex.Messenger, serving 20kRPS, with a focus on efficient and secure asynchronous code to ensure \textbf{system resilience}.
 \begin{descritemize}
-    \descritem Contributed to \textbf{Json/Protobuf APIs}, message processing conveyor, and data storage (\textbf{PostgreSQL/YDB}).
-    \descritem Delivered \textbf{full-cycle} feature implementation: development, testing, deployment, and administration.
-    \descritem Enhanced system scalability via \textbf{sharding} and \textbf{load balancing} for the support service.
-    \descritem \textbf{Optimized} in-memory cache storage, reducing RAM consumption by 10\%.
-    \descritem Gained \textbf{Python3} experience (aiohttp, uwsgi, pytests).
+    \descritem Contributed to \textbf{core service components}: Json/Protobuf APIs, message processing pipeline, and data storage (PostgreSQL/YDB).
+    \descritem Boosted system scalability by implementing  \textbf{sharding and load balancing}, resolving bottlenecks in the support-automation service.
+    \descritem Optimized in-memory cache storage, \textbf{reducing RAM consumption} by 10\%.
+    \descritem Integrated probabilistic data structures to count unique message views in large channels, \textbf{reducing the space complexity} significantly.
+    \descritem Gained Python experience while \textbf{developing the auxiliary services}.
 \end{descritemize}
-\textbf{Stack}: \textit{C++17 / Python3 / Protobuf / PostgreSQL / YDB}
+\textbf{Stack}: \textit{C++17 / Python / Protobuf / PostgreSQL / YDB}
 
 \sectionspace
 
@@ -200,11 +210,11 @@ Worked on a high-load \textbf{C++17} backend for Yandex.Messenger app, focusing 
 \descript{| Software Engineer}
 \location{Jun 2018 - Feb 2020 | St. Petersburg, Russia}
 
-Developed a cross-platform \textbf{C++14 / Boost} library for the business logic of an \textbf{Android/iOS} courier app.
+Developed a \textbf{cross-platform C++14 / Boost library} for the business logic of an \textbf{Android/iOS} courier app.
 \begin{descritemize}
-    \descritem Redesigned \textbf{architecture}, cutting time-to-market for new features by 30\%.
-    \descritem Developed a middle-end layer to integrate the backend with platform-native frontends using \textbf{JsonRPC} and \textbf{Djinni}-generated bridges, featuring automatic \textbf{SQLite} caching for reliable offline support. 
-    \descritem Designed the universal \textbf{CRUD API} for seamless operations.
+    \descritem \textbf{Redesigned architecture}, cutting time-to-market for new features by 30\%.
+    \descritem Developed a middle-end layer to \textbf{integrate the backend with platform-native frontends} using JsonRPC and Djinni-generated bridges.
+    \descritem Built a generic \textbf{component for automatic data caching} to a local SQLite DB, ensuring reliable offline support. 
 \end{descritemize}
 \textbf{Stack}: \textit{C++14 / Boost / JNI / Djinni / SQLite / Conan / CMake / Boost.Test}
 
